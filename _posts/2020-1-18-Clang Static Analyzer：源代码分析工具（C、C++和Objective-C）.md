@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      Clang Static Analyzer：源代码分析（C/C++/Objective-C）
 date:       2021-1-18
@@ -10,17 +10,18 @@ tags:
 ---
 ## 1、Clang Static Analyzer介绍
 
->     Clang Static Analyzer是一个源代码分析工具，可以找出C、C++和Objective-C程序中的错误。目前可以作为独立的工具运行，也可以在开发工具中运行。如果是独立的工具，在命令行调用，使它和一些基本代码库串联运行。
->     Clang Static Analyzer的目标是为分析C、C++和Objective-C程序提供一个工业品质静态分析框架，它可以免费获取、可扩展，并且高质量完成。
->     正如其名称所示，Clang Static Analyzer在Clang和LLVM顶层生成。严格来说，这个分析器是Clang的一部分，因为Clang包含一套可重复使用的C++库，用来生成强大的源码级工具。Clang
+> Clang Static Analyzer是一个源代码分析工具，可以找出C、C++和Objective-C程序中的错误。目前可以作为独立的工具运行，也可以在开发工具中运行。如果是独立的工具，在命令行调用，使它和一些基本代码库串联运行。
+> Clang Static Analyzer的目标是为分析C、C++和Objective-C程序提供一个工业品质静态分析框架，它可以免费获取、可扩展，并且高质量完成。
+> 正如其名称所示，Clang Static Analyzer在Clang和LLVM顶层生成。严格来说，这个分析器是Clang的一部分，因为Clang包含一套可重复使用的C++库，用来生成强大的源码级工具。Clang
 > Static Analyzer使用的这个静态分析引擎是一个Clang库，可以在不同的环境和客户端中被重复使用。
->     静态分析器是不完美的。它可能在代码正确的程序中错误的检测出漏洞。因为一些代码检测比另一些需要更精确的分析，所以误检率在不同的检测中变化很大。
+> 静态分析器是不完美的。它可能在代码正确的程序中错误的检测出漏洞。因为一些代码检测比另一些需要更精确的分析，所以误检率在不同的检测中变化很大。
 
 ------
 # 2、linux如何采用Clang Static Analyzer开展静态分析
 ## 1)	首先下载android ndk包，并解压
 
-​    本人linux下采用了android开发人员提供的android-ndk-r12b-linux-x86_64.zip，解压到/opt目录下，得到了android-ndk-r12b
+> ​    本人linux下采用了android开发人员提供的android-ndk-r12b-linux-x86_64.zip，解压到/opt目录下，得到了android-ndk-r12b
+>
 
 ## 2)	静态分析只关心两个文件
 
@@ -56,17 +57,18 @@ tags:
 
 ## 2)	静态分析结果保存在alyout文件夹下
 
-![Layout](/img/blog_img/layout.png)
+![Layout](img/blog_img/layout.png)
 
 ## 3)	查看静态分析结果，修改bug
 
-双击index.html，即可查看本次静态分析的结果：
+> 双击index.html，即可查看本次静态分析的结果：
+>
 
-![Analysis](/img/blog_img/analysis.png)
+![Analysis](img/blog_img/analysis.png)
 
-点击相应的View Report，即可查看相应的潜在bug。点击第5个View Report，可以看到以下结果：
-![Bug_analysis](/img/blog_img/bug_analysis.png)
-通过静态分析，可以确定潜在bug，查看源码确定，是否需要修改；如果修改，怎么修改；最终达到改进代码质量的目的。
+> 点击相应的View Report，即可查看相应的潜在bug。点击第5个View Report，可以看到以下结果：
+> ![Bug_analysis](img/blog_img/bug_analysis.png)
+> 通过静态分析，可以确定潜在bug，查看源码确定，是否需要修改；如果修改，怎么修改；最终达到改进代码质量的目的。
 
 # 4、总结
 
