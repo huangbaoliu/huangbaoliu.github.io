@@ -1,6 +1,6 @@
 ﻿---
 layout:     post
-title:      Clang Static Analyzer：源代码分析工具（C、C++和Objective-C）
+title:      Clang Static Analyzer：源代码分析（C/C++/Objective-C）
 date:       2021-1-18
 author:     huangbaoLiu
 header-img: img/post-bg-desk.jpg
@@ -56,16 +56,16 @@ tags:
 
 ## 2)	静态分析结果保存在alyout文件夹下
 
-![Layout](C:\Users\Administrator.LIUHUANGBAO\Documents\GitHub\huangbaoliu.github.io\img\blog_img\layout.png)
+![Layout](/img/blog_img/layout.png)
 
 ## 3)	查看静态分析结果，修改bug
 
 双击index.html，即可查看本次静态分析的结果：
 
-![Analysis](C:\Users\Administrator.LIUHUANGBAO\Documents\GitHub\huangbaoliu.github.io\img\blog_img\analysis.png)
+![Analysis](/img/blog_img/analysis.png)
 
 点击相应的View Report，即可查看相应的潜在bug。点击第5个View Report，可以看到以下结果：
-![Bug_analysis](C:\Users\Administrator.LIUHUANGBAO\Documents\GitHub\huangbaoliu.github.io\img\blog_img\bug_analysis.png)
+![Bug_analysis](/img/blog_img/bug_analysis.png)
 通过静态分析，可以确定潜在bug，查看源码确定，是否需要修改；如果修改，怎么修改；最终达到改进代码质量的目的。
 
 # 4、总结
