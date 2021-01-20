@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Linux Samba服务配置流程
-date:       2021-1-18
+date:       2021-1-20
 author:     huangbaoLiu
 header-img: img/post-bg-desk.jpg
 catalog: true
