@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Centos 7下Petalinux工具安装
-date:       2021-1-20
+title:      Centos 7 Petalinux工具安装
+date:       2021-1-21
 author:     huangbaoLiu
 header-img: img/post-bg-desk.jpg
 catalog: true
