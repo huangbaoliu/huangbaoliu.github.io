@@ -92,7 +92,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "迪曼森科技",
-        href: "https://www.ahdms.com/"
+        title: "github",
+        href: "https://github.com/huangbaoliu"
     }
 ]
